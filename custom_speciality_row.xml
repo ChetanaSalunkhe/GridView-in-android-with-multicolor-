@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<android.support.v7.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardElevation="0.5dp"
+    card_view:cardMaxElevation="0.7dp"
+    card_view:cardUseCompatPadding="true"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:id="@+id/rel_lay_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="1dp"
+        android:paddingLeft="1dp"
+        android:elevation="5dp">
+
+        <RelativeLayout
+            android:id="@+id/laycat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp"
+            android:visibility="visible"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/layimg"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/imageview_cat_logo"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/basket_24kb"
+                    android:visibility="visible"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageview_next"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tbuds_nextarrow"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="vertical"
+                    android:alpha="0.15"/>
+
+                <TextView
+                    android:id="@+id/textview_category_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Category"
+                    android:textColor="#222"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+            <!--android:layout_alignBottom="@+id/imageview_cat_logo"-->
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_subcat_count"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text=""
+            android:background="@drawable/tbuds_sphere1"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_marginRight="0dp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
